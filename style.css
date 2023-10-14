@@ -1,0 +1,18 @@
+.gallery {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.gallery-item {
+  scroll-snap-align: center;
+  /* lowest width it can have */
+  min-width: 50%;
+}
+.gallery-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 7px;
+}
